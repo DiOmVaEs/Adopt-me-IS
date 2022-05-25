@@ -19,4 +19,3 @@
 		header("refresh:0; url=../profile.php");
 		echo'<script type="text/javascript"> alert("Datos actualizados");</script>';
 ?>
-				

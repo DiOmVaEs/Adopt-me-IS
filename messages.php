@@ -3,7 +3,7 @@
 
     <head>
         <meta charset="utf-8">
-        <title>Publicaciones</title>
+        <title>Mis mensajes</title>
         <link href="css/posts.css" rel="stylesheet" type="text/css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
@@ -37,7 +37,7 @@
                         <a class="nav-link active" aria-current="page" href="uhome.php">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active text-info" aria-current="page" href="posts.php">Publicaciones</a>
+                        <a class="nav-link active" aria-current="page" href="posts.php">Publicaciones</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="createpost.php">Publicar</a>
@@ -52,7 +52,7 @@
                         <a class="nav-link active" aria-current="page" href="aboutus.html">Acerca de</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="profile.php">Mi perfil</a>
+                        <a class="nav-link active text-info" aria-current="page" href="profile.php">Mi perfil</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active text-danger" aria-current="page" href="php/exit.php">Cerrar sesion</a>
@@ -65,25 +65,9 @@
     
     </nav>
 
-    <div class="my-3 p-3 bg-body rounded shadow-sm">
-        <h1 class="h6 mb-0 text-dark lh-1">Publicaciones</h1>
-
-        <small class="d-block text-end mt-3">
-            <a href="myposts.php">Ver mis publicaciones</a>
-        </small>
-<?php if($numberpost['a'] != 0){ while($fila=mysqli_fetch_array($result)){ ?>
-
-        <div class="d-flex text-muted pt-5">
-            <?php echo"<a href='dogdetails.php?idpost=",$fila['idpost'],"'><img src='",$fila['image'],"' height='45' class='lefticon d-inline-block align-top m-2' alt='",$fila['name'],"'></a>";?>
-            <p class="pb-3 mb-0 small lh-sm border-bottom">
-                <?php echo"<strong class='d-block text-gray-dark'>",$fila['name'],"</strong>";?>
-                <?php echo"<label class='text-gray'>",$fila['description'],"</label>";?>
-            </p>
-        </div>
-
-<?php }}else{?>
-        <br><br><br><br><h3 class="lead text-center  bg-danger p-3 text-white">Aun no hay Publicaciones</h3>
-<?php }?>
+    <div class="container-center form-su form-control form-control-sm">
+        <div class="col-3 bg-secondary border rounded-pill position-absolute ">A</div>
+        <div></div>
         
     </div>
 

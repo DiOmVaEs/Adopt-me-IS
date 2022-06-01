@@ -34,8 +34,8 @@ body {
 
 #divLeftElement img {
     position: relative;
-    top: -25px; /* ajustar los valores para mover la imagen */
-    left: -5px;
+    top: -5px; /* ajustar los valores para mover la imagen */
+    left: -35px;
     width: 50%px;
     height: 50%px;
     border-radius: 10%;
@@ -49,13 +49,13 @@ body {
  }
 
 #divLeftElementInCard{
-  margin-top: 100px;
+  margin-top: 50px;
     width: 50%; 
     float:left;
 }
 
 #divRightElementInCard{
-  margin-top: 100px;
+  margin-top: 50px;
     width: 50%; 
     float:right;
 }

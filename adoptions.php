@@ -3,7 +3,7 @@
 
     <head>
         <meta charset="utf-8">
-        <title>Inicio</title>
+        <title>Adopciones</title>
         <link href="css/uhome.css" rel="stylesheet" type="text/css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
@@ -21,7 +21,7 @@
             <div class="collapse navbar-collapse" id="navbarsExample09">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active text-info" aria-current="page" href="ahome.php">Inicio</a>
+                        <a class="nav-link active" aria-current="page" href="ahome.php">Inicio</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="aposts.php">Publicaciones</a>
@@ -36,7 +36,7 @@
                         <a class="nav-link active" aria-current="page" href="avets.php">Veterinarias</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="adoptions.php">Adopciones</a>
+                        <a class="nav-link active text-info" aria-current="page" href="adoptions.php">Adopciones</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="aprofile.php">Perfil</a>
@@ -52,26 +52,31 @@
     </nav>
 
     <div class="px-4 py-5 my-5 text-center border shadow-lg">
-        <img class="d-block mx-auto mb-4" src="images/huella.png" alt="" width="100" height="100">
-        <h1 class="display-5 fw-bold">Bienvenido Administrador</h1>
-    </div>
-
-    <div class="px-4 py-5 my-5 text-center border shadow-lg">
-        <h1 class="display-5 fw-bold">Gestionar publicaciones</h1>
+        <h1 class="display-5 fw-bold">Ver solicitudes de adopciones</h1>
         <div class="col-lg-6 mx-auto">
-            <p class="lead mb-4">hechas por usuarios dando perritos en adopcion</p>
-            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                <a type="button" class="btn btn-primary btn-lg px-4 gap-3" href="aposts.php">Gestionar</a>
+            <img src="images/request-icon.png" alt="" width="90">
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center p-3">
+                <a type="button" class="btn btn-primary btn-lg px-4 gap-3" href="seerequests.php">Ver</a>
             </div>
         </div>
     </div>
 
     <div class="px-4 py-5 my-5 text-center border shadow-lg">
-        <h1 class="display-5 fw-bold">Dale seguimiento</h1>
+        <h1 class="display-5 fw-bold">Ver adopciones realizadas</h1>
         <div class="col-lg-6 mx-auto">
-            <p class="lead mb-4">a las adopciones que se han llevado a cabo en la plataforma</p>
-            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Ver</button>
+            <img src="images/adoption-icon.jpg" alt="" width="120">
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center p-3">
+                <a type="button" class="btn btn-primary btn-lg px-4 gap-3" href="seeadoptions.php">Ver</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="px-4 py-5 my-5 text-center border shadow-lg">
+        <h1 class="display-5 fw-bold">Ver Evidencias de adopciones</h1>
+        <div class="col-lg-6 mx-auto">
+            <img src="images/followadoptions-icon.png" alt="" width="90">
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center p-3">
+                <a type="button" class="btn btn-primary btn-lg px-4 gap-3" href="seeevidence.php">Ver</a>
             </div>
         </div>
     </div>

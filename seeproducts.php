@@ -32,31 +32,30 @@
             <div class="collapse navbar-collapse" id="navbarsExample09">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="uhome.php">Inicio</a>
+                        <a class="nav-link active" aria-current="page" href="ahome.php">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="posts.php">Publicaciones</a>
+                        <a class="nav-link active" aria-current="page" href="aposts.php">Publicaciones</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="createpost.php">Publicar</a>
+                        <a class="nav-link active text-info" aria-current="page" href="aproducts.php">Productos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active text-info" aria-current="page" href="products.php">Productos</a>
+                        <a class="nav-link active" aria-current="page" href="ausers.php">Usuarios</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="vetsnear.html">Cerca de mi</a>
+                        <a class="nav-link active" aria-current="page" href="avets.php">Veterinarias</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="aboutus.html">Acerca de</a>
+                        <a class="nav-link active" aria-current="page" href="adoptions.php">Adopciones</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="profile.php">Mi perfil</a>
+                        <a class="nav-link active" aria-current="page" href="aprofile.php">Perfil</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active text-danger" aria-current="page" href="php/exit.php">Cerrar sesion</a>
+                        <a class="nav-link active text-danger" aria-current="page" href="php/exit.php">Cerrar Sesion</a>
                     </li>
                 </ul>
-                <a class="navbar-brand" href="shoppingcar.php"><img src="images/sc.png" width="30px" class="lefticon d-inline-block align-top" alt="Logo Adopt-Me"></a>
             </div>
 
         </div>
@@ -69,19 +68,23 @@
 
         <?php echo"<a href='productsdetails.php?idproduct=",$fila['idproduct'],"' class='item-container'>";?>
             <div class="grid-item">
-                <?php echo"<img src='",$fila['image'],"' width='120px'>";?>
+                
                 <div class="item-info">
+                    <?php echo"<img src='",$fila['image'],"' width='100px'>";?>
                     <?php echo"<label class='title-item'>",substr($fila['name'], 0, 20),"...</label>";?>
-                    <?php echo"<label class='description-item'>",substr($fila['description'], 0, 35),"...</label>";?>
                     <div class='amout-price-end'>
                         <?php echo"<label class='amount-item'>",$fila['stock']," disponibles</label>";?>
-                        <?php echo"<label class='price-item'> $",$fila['price'],"</label>";?>
+                        <?php echo"<br><a class='btn btn-success btn-sm' href='php/moreprod.php?idproduct=",$fila['idproduct'],"'>+</a>";?>
+                        <?php echo"<a class='btn btn-warning btn-sm' href='php/lessprod.php?idproduct=",$fila['idproduct'],"'>-</a>";?>
+                        <?php echo"<br><label class='price-item'> $",$fila['price'],"</label>";?>
                     </div>
+                    <?php echo"<br><a class='btn btn-danger' href='php/deleteprod.php?idproduct=",$fila['idproduct'],"'>Eliminar</a>";?>
                 </div>
             </div>
         </a>
 
 <?php }}else{?>
+        </div>
         <br><br><br><br><h3 class="lead text-center  bg-danger p-3 text-white">No hay productos disponibles</h3>
 <?php }?>
 

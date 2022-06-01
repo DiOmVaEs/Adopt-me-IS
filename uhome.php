@@ -51,6 +51,9 @@
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="profile.php">Mi perfil</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-danger" aria-current="page" href="php/exit.php">Cerrar sesion</a>
+                    </li>
                 </ul>
                 <a class="navbar-brand" href="shoppingcar.php"><img src="images/sc.png" width="30px" class="lefticon d-inline-block align-top" alt="Logo Adopt-Me"></a>
             </div>
@@ -69,47 +72,15 @@
         
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
-
-                <div class="container">
-
-                    <div class="carousel-caption text-start">
-                        <h1>Diapositiva 1</h1>
-                        <p>Alguna imagen de Adopt-me</p>
-                        <p><a class="btn btn-lg btn-primary" href="#">Esto es Adopt-Me</a></p>
-                    </div>
-
-                </div>
-
+                <img src="images/carrousel1.jpeg" width="200px" height="200px">
             </div>
               
             <div class="carousel-item">
-                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
-
-                <div class="container">
-                  
-                    <div class="carousel-caption">
-                        <h1>Diapositiva 2</h1>
-                        <p>Alguna imagen de Adopt-me</p>
-                        <p><a class="btn btn-lg btn-primary" href="#">Conoce Adopt-Me</a></p>
-                    </div>
-                
-                </div>
+                <img src="images/carrousel2.jpeg" width="200px" height="200px">
             </div>
               
             <div class="carousel-item">
-                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
-
-                <div class="container">
-
-                    <div class="carousel-caption text-end">
-                        <h1>Diapositiva 3</h1>
-                        <p>Alguna imagen de Adopt-me</p>
-                        <p><a class="btn btn-lg btn-primary" href="#">Conoce mas</a></p>
-                    </div>
-
-                </div>
-              
+                <img src="images/carrousel3.jpeg" width="200px" height="200px">
             </div>
             
         </div>

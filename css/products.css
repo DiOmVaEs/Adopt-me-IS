@@ -41,37 +41,30 @@ body {
 
 
 .title-item{
-    font-family: Balsamiq Sans;
-    font-weight: bold;
-    font-size: 1.2rem;
-    color: #000000;
-    display: block;
-    text-align: left;
+  font-size: 1.0rem;
+  display: block;
+  text-align: left;
     
 }
 
 .description-item{
-      font-family: chilanka;
-    color: #5c5c5c;
-    display: block;
-    font-size: 1rem;
-      text-align: left;
-      margin-bottom: 1rem;
+  color: #5c5c5c;
+  display: block;
+  font-size: 1rem;
+  text-align: left;
+  margin-bottom: 1rem;
   }
 
-.price-item{
-  color: #272727;
-    font-family: Balsamiq Sans;
-    font-weight: bold;
-  font-size: 1rem;
-    float: right;
+.price-item{  
+  font-weight: bold;
+  font-size: 1rem;  
+  float: left;
 }
 
 .amount-item{
   color: #272727;
   font-size: 1rem;
-    font-family: Balsamiq Sans;
-    font-weight: bold;
-    text-align: left;
-    float: left;
+  font-weight: bold;
+  text-align: left;
+  float: left;
 }

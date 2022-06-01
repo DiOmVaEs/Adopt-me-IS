@@ -3,13 +3,22 @@
 
     <head>
         <meta charset="utf-8">
-        <title>Inicio</title>
-        <link href="css/uhome.css" rel="stylesheet" type="text/css">
+        <title>Mi perfil</title>
+        <link href="css/products.css" rel="stylesheet" type="text/css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     </head>
 
 <body>
+
+    <?php
+        session_start();
+        include("php/connection.php");
+        $iduser = $_SESSION['iduser'];
+        $idadoption = $_GET["idadoption"];
+        $query = "SELECT * from evidence WHERE idadoption = '$idadoption'";
+        $result = mysqli_query($conex, $query);
+    ?>
 
     <nav class="navbar navbar-expand-xl navbar-light bg-light " aria-label="Eleventh navbar example">
         <div class="container-fluid">
@@ -21,7 +30,7 @@
             <div class="collapse navbar-collapse" id="navbarsExample09">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active text-info" aria-current="page" href="ahome.php">Inicio</a>
+                        <a class="nav-link active" aria-current="page" href="ahome.php">Inicio</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="aposts.php">Publicaciones</a>
@@ -36,7 +45,7 @@
                         <a class="nav-link active" aria-current="page" href="avets.php">Veterinarias</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="adoptions.php">Adopciones</a>
+                        <a class="nav-link active text-info" aria-current="page" href="adoptions.php">Adopciones</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="aprofile.php">Perfil</a>
@@ -50,30 +59,20 @@
         </div>
     
     </nav>
+    
 
-    <div class="px-4 py-5 my-5 text-center border shadow-lg">
-        <img class="d-block mx-auto mb-4" src="images/huella.png" alt="" width="100" height="100">
-        <h1 class="display-5 fw-bold">Bienvenido Administrador</h1>
-    </div>
+    <div class="row grid-container text-center">
+        
+<?php while($fila=mysqli_fetch_array($result)){ ?>
 
-    <div class="px-4 py-5 my-5 text-center border shadow-lg">
-        <h1 class="display-5 fw-bold">Gestionar publicaciones</h1>
-        <div class="col-lg-6 mx-auto">
-            <p class="lead mb-4">hechas por usuarios dando perritos en adopcion</p>
-            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                <a type="button" class="btn btn-primary btn-lg px-4 gap-3" href="aposts.php">Gestionar</a>
+            <div class="col-5 text-muted pt-5">
+                <?php echo"<img src='",$fila['Image'],"' width='420px'>";?>
+                <?php echo"<br><label class=''>",$fila['description'],"</label>";?>
             </div>
-        </div>
-    </div>
+        </a>
 
-    <div class="px-4 py-5 my-5 text-center border shadow-lg">
-        <h1 class="display-5 fw-bold">Dale seguimiento</h1>
-        <div class="col-lg-6 mx-auto">
-            <p class="lead mb-4">a las adopciones que se han llevado a cabo en la plataforma</p>
-            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Ver</button>
-            </div>
-        </div>
+<?php }?>
+
     </div>
 
 </body>

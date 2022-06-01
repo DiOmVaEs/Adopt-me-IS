@@ -54,6 +54,9 @@
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="profile.php">Mi perfil</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-danger" aria-current="page" href="php/exit.php">Cerrar sesion</a>
+                    </li>
                 </ul>
                 <a class="navbar-brand" href="shoppingcar.php"><img src="images/sc.png" width="30px" class="lefticon d-inline-block align-top" alt="Logo Adopt-Me"></a>
             </div>
@@ -84,7 +87,9 @@
         </div>
 
 <?php }}else{?>
-        <h3 class="lead text-center col-12 bg-danger pt-2">Aun no has hecho alguna publicacion</h3>
+
+        <br><br><br><br><h3 class="lead text-center  bg-danger p-3 text-white">Aun no has hecho alguna publicacion</h3>
+        
 <?php }?>
         
     </div>
